@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#Author: 	Jordan Ulmer
+#Date:		2016-12-30
+#Purpose: 	git aliases
+
+alias gs='git status --short'
+alias gcm='git commit'
+alias gco='git checkout'
+alias gd='git diff'
+
