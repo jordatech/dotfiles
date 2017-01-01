@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #Author: 	Jordan Ulmer
-#Date:		2016-12-30
+#Date:		2016-12-31
 #Purpose: 	git aliases
 
 alias gs='git status --short'
