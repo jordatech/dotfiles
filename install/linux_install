@@ -23,7 +23,7 @@ echo "Finding packages to install in: $APT_PKG_FILE"
       do
         if [[ ! "$line" =~ (^#|^$) ]]; then
           packages="$packages $line"
-        fi
+        fi 
       done
     fi
     #return;
