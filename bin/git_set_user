@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+#Author:    Jordan Ulmer && Nathan Genetzky
+#Date:      2017-01-04
+#Purpose:   set git user_env
+
+if [[ $1 != "" ]] ; then user_env=$1 ; else user_env="home" ; fi
+
+echo "user_env=$user_env"
+
+old_useremail=$(git config --local --get user.email)
+old_username=$(git config --local --get user.name)
+
+case "$user_env" in
+h*)
+    git config --local user.email 'Jordatech@gmail.com'
+    git config --local user.name 'Jordan Ulmer'
+    ;;
+r*)
+    git config --local user.email 'Jordan.Ulmer@rockwellcollins.com'
+    git config --local user.name 'Jordan Ulmer'
+    ;;
+    *)
+    echo "ERROR: User envioronment ($user_env) NOT recognized"
+esac
+
+new_useremail=$(git config --local --get user.email)
+new_username=$(git config --local --get user.name)
+
+# Check for and Report Changes
+if [ $new_useremail != $old_useremail ] || [[ $new_username != $old_username ]] ; then
+    echo "old_username=$old_username"
+    echo "old_useremail=$old_useremail"
+    echo "new_username=$new_username"
+    echo "new_useremail=$new_useremail" 
+else
+    echo "NO CHANGE"
+    echo "username=$new_username"
+    echo "useremail=$new_useremail"
+fi

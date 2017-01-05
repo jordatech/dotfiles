@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#Author:    Jordan Ulmer
+#Date:      2017-01-04
+#Purpose:   overwrite sublime user keybindings with .dotfile keybindings
+
+cp -avr $DOTFILES/subl/Default\ \(Linux\).sublime-keymap ~/.config/sublime-text-3/Packages/User/Default\ \(Linux\).sublime-keymap
