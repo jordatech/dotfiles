@@ -1,0 +1,11 @@
+//Author: 		Jordan Ulmer
+//Date Created:	2017-01-04
+//Purpose: 		User sublime-text-3 Keymaps
+[
+	// Use standard internet browser tab cycle
+	{ "keys": ["ctrl+tab"], "command": "next_view" },
+	{ "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+	// Use standard internet browser forward page back page
+	{ "keys": ["alt+left"], "command": "next_view_in_stack" },
+	{ "keys": ["alt+right"], "command": "prev_view_in_stack" },
+]
