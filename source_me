@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-#Author: 	Jordan Ulmer
-#Date:		2016-12-31
-#Purpose: 	source aliases
-
-source alias/git_alias

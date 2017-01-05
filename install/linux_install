@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+#Author:    Jordan Ulmer
+#Date:      2017-01-04
+#Purpose:   Install packages
+#Source: 
+# Constants
+APT_PKG_FILE="$(pwd)/packages/apt"
+
+if [[ "$OSTYPE" != "linux"* ]]; then
+  echo "$0 : Will only run on Linux"
+  exit 1
+fi
+
+###############################################################################
+# apt-get
+###############################################################################
+
+echo "Finding packages to install in: $APT_PKG_FILE"
+
+    if [[ -f $APT_PKG_FILE ]]; then
+      exec<$APT_PKG_FILE
+      while read line
+      do
+        if [[ ! "$line" =~ (^#|^$) ]]; then
+          packages="$packages $line"
+        fi
+      done
+    fi
+    #return;
+    echo "$packages"
+
+echo "apt-git installing $packages"
+# sudo apt-get install $apt_packages

@@ -1,0 +1,7 @@
+#Author:    Jordan Ulmer
+#Date:      2017-01-04
+#Purpose:   Packages to be install with apt-get
+
+git
+vim
+subl
