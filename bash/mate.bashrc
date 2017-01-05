@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 #Author:    Jordan Ulmer
 #Date:      2016-12-31
-#Purpose:   Ubuntu Mate ~/.bashrc
+#Purpose:   setup linux environment 
+#Ubuntu mate.bashrc
 
+echo "sourcing mate.bashrc"
 
 # If not running interactively, don't do anything
 case $- in
@@ -107,10 +109,15 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 #############
 ## Aliases ##
 #############
+DOTFILES=~/.dotfiles/
+### Add Paths
+if [[ -f $DOTFILES/system/path ]]; then
+    source $DOTFILES/system/path
+fi
 
-### DOTPHILES
-if [[ -f ~/.dotphiles/source_me ]]; then
-    . ~/.dotphiles/source_me
+### bash
+if [ -f ~/.bash_aliases ]; then
+    source ~/.bash_aliases
 fi
 
 ### bash

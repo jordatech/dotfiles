@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+#Date:      2017-01-04
+#Purpose:   Add and remove dirs to PATH
+#Source:    Nathan Genetzky - https://github.com/ngenetzky/dotfiles.git
+
+
+########################################################################
+
+pathadd() {
+    pathrm "$1"
+    if [ -d "$1" ] && ! echo $PATH | grep -E -q "(^|:)$1($|:)" ; then
+        if [ "$2" = "after" ] ; then
+            PATH="$PATH:${1%/}"
+        else
+            PATH="${1%/}:$PATH"
+        fi
+    fi
+}
+
+pathrm() {
+    old=$PATH
+    PATH="$(echo $PATH | sed -e "s;\(^\|:\)${1%/}\(:\|\$\);\1\2;g" -e 's;^:\|:$;;g' -e 's;::;:;g')"
+    if ! [[ $PATH == *"/bin"* ]]
+    then
+        echo "Don't break the PATH! pathrm-> $PATH"
+        PATH=$old
+        echo "Reverted to $old"
+    fi
+}
+
+export -f pathadd
+export -f pathrm
+
+########################################################################
+
+
