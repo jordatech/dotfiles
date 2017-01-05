@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#Author:    Jordan Ulmer, Nathan Genetzky, Tannar Johnson
+#Date:      2017-01-04
+#Purpose:   setup Hardware Integrated Prototyping Environment
+
+echo "Loading $DOTFILES/profile.hipe"
+
+#Clone workspace if does not already exist.
+if [[ ! -e $WORKSPACE/jdulmer/hipe ]]; then
+    git clone https://jordatech@bitbucket.org/HIPE-Team/hipe.git $WORKSPACE/jdulmer/hipe
+fi
+
+export HIPE_REPO=$WORKSPACE/$user/hipe
+
+if [[ -f $HIPE_REPO/config/profile.hipe ]]; then
+    source $HIPE_REPO/config/profile.hipe
+fi
