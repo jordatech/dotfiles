@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 #Date:      2017-01-04
-#Purpose:   Add and remove dirs to PATH
-#Source:    Nathan Genetzky - https://github.com/ngenetzky/dotfiles.git
-
+#Purpose:   Add and remove dirs to global PATH
+#Source:    Adapted from Nathan Genetzky - https://github.com/ngenetzky/dotfiles.git
 
 ########################################################################
 
@@ -33,4 +32,24 @@ export -f pathrm
 
 ########################################################################
 
+# dotfiles
+pathadd "$DOTFILES/bin"
 
+# set PATH so it includes user's private bin directories
+pathadd "~/bin"
+pathadd "~/.local/bin"
+
+# Modelsim
+pathadd $HOME/altera/12.1/modelsim_ase/linuxaloem after
+pathadd $HOME/altera/16.1/modelsim_ase/linuxaloem after
+pathadd $HOME/altera/13.0sp1/modelsim_ase/linuxaloem after
+
+# Quartus
+pathadd ~/altera_lite/16.0/quartus/bin after
+pathadd ~/altera/13.0sp1/quartus/bin
+
+# GnuWin32
+pathrm "/GnuWin32/bin"
+
+# MinGW
+pathadd "/c/MinGW/bin/"
