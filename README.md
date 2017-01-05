@@ -1,2 +1,3 @@
 # dotfiles
-Jordan has dotfiles because linux is #Awesome !
+
+"dotfiles" are used to configure your linux development.
