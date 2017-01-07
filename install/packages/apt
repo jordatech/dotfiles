@@ -5,6 +5,7 @@
 git
 vim
 subl
+tree
 
 # HIPE Specific
 #libboost-all-dev
