@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+#Author:    Jordan Ulmer
+#Date:      2017-01-07
+#Purpose:   Global search aliases
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# search = in files local
+alias grepl='grep --color=auto -n -E'
+
+# search = in files recursive
+alias grepr='grep --color=auto -nr -E'
+
+# search = filename recursive
+# timeout 20s
+alias grepf='find . | grep --color=auto -E'
+
+# search = in files recursive suppress
+alias grepis='grep --color=auto -n -o -R -E'

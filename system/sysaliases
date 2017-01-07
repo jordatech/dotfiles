@@ -46,6 +46,10 @@ alias .4='cd ../../../../'
 alias .....='cd ../../../../'
 alias .5='cd ../../../../..'
 
+# DIR
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+
 #-------------------------------------------------------------
 # The 'ls' family (this assumes you use a recent GNU ls).
 #-------------------------------------------------------------
@@ -66,17 +70,10 @@ alias lr='ll -R'           #  Recursive ls.
 alias la='ll -A'           #  Show hidden files.
 
 # Check tree is installed first.
-# alias tree='tree -Csuh'    #  Nice alternative to 'recursive ls' ...
+alias tree='tree -Csuh'    #  Nice alternative to 'recursive ls' ...
 
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    # alias ls='ls --color=auto' # already listed above
-    alias dir='dir --color=auto'
-    alias vdir='vdir --color=auto'
 
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
+### search aliases
+if [[ -f $DOTFILES/system/searchaliases ]]; then
+    source $DOTFILES/system/searchaliases
 fi
-
