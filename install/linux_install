@@ -30,4 +30,24 @@ echo "Finding packages to install in: $APT_PKG_FILE"
     echo "$packages"
 
 echo "apt-git installing $packages"
-# sudo apt-get install $apt_packages
+sudo apt-get install $apt_packages
+
+###############################################################################
+# bashrc
+###############################################################################
+#Purpose:   overwrite sublime user keybindings with .dotfile keybindings
+
+#l(i)n(k) -s(ymbolic) <target> <optional name>
+cp -avr ~/.bashrc ~/.bashrc.backup
+ln -s $DOTFILES/bahsrc/mate.bahsrc ~/.bashrc
+
+###############################################################################
+# subl
+###############################################################################
+#Purpose:   overwrite sublime user keybindings with .dotfile keybindings
+
+cp -avr ~/.config/sublime-text-3/Packages/User/Default\ \(Linux\).sublime-keymap ~/.config/sublime-text-3/Packages/User/Default\ \(Linux\).sublime-keymap.backup
+ln -s $DOTFILES/subl/Default\ \(Linux\).sublime-keymap.symlink ~/.config/sublime-text-3/Packages/User/Default\ \(Linux\).sublime-keymap
+cp -avr ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings.backup
+ln -s $DOTFILES/subl/Preferences.sublime-settings.symlink ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
+
