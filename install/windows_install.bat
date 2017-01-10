@@ -7,8 +7,11 @@
 @ echo Sourcing windows_install.bat
 @ echo off
 
-:: TODO: setup a
-:: cmd.exe /K C:\path\to\file.cmd
+:: TODO: User must create a shortcut on desktop
+
+:: target: %windir%\system32\cmd.exe /K Z:\workspace\jdulmer\dotfiles\install\windows_install.bat
+:: Start In: Z:\workspace\jdulmer
+:: Shortcut Key: ctrl+alt+t 
 
 :: Environmental Variables
 SET WORKSPACE="Z:\workspace\jdulmer"
