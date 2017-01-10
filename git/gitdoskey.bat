@@ -10,13 +10,13 @@
 
 doskey gs=git status --short
 
-doskey gco=git checkout *$
+doskey gco=git checkout *
 
-doskey gc=git commit *$
+doskey gc=git commit *
 
 doskey gd=git diff *$
 
-doskey gb=git branch
+doskey gb=git branch *
 
 doskey ga=git add *
 
