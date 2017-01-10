@@ -8,21 +8,21 @@
 
 :: Defined in gitconfig
 
-doskey gs=git status --short
+DOSKEY gs=git status --short
 
-doskey gco=git checkout *
+:: DOSKEY gco=git checkout * :: does not function with added commands
 
-doskey gc=git commit *
+:: DOSKEY gc=git commit * :: does not function with added commands
 
-doskey gd=git diff *$
+:: DOSKEY gd=git diff *$ :: does not function with added commands
 
-doskey gb=git branch *
+:: DOSKEY gb=git branch * :: does not function with added commands
 
-doskey ga=git add *
+DOSKEY ga=git add -A
 
-doskey gr=git reset
+DOSKEY gr=git reset
 
-:: doskey gac=git add -A && git commit -m *$
+:: DOSKEY gac=git add -A && git commit -m *
 
-doskey glog=git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative *$
+DOSKEY glog=git log --graph --pretty=format:"%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset" --abbrev-commit --date=relative
 
