@@ -24,5 +24,5 @@ DOSKEY gr=git reset
 
 :: DOSKEY gac=git add -A && git commit -m *
 
-DOSKEY glog=git log --graph --pretty=format:"%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset" --abbrev-commit --date=relative
+DOSKEY glog=git log --graph --abbrev-commit --date=relative
 
