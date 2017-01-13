@@ -1,0 +1,3 @@
+// Default: Tools > Options > Prefered Text Editor > Quartus II Text Editor
+// Tools > Options > Prefered Text Editor > Custom
+"C:\Program Files\Sublime Text 3\sublime_text.exe" %f:%l
