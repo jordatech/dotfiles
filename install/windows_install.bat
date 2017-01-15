@@ -18,6 +18,8 @@ SET WORKSPACE="Z:\workspace\jdulmer"
 SET DOTFILES="%WORKSPACE%\dotfiles"
 
 :: Source Aliases
-CALL %DOTFILES%\git\gitdoskey.bat
-CALL %DOTFILES%\subl\subldoskey.bat
-CALL %DOTFILES%\system\sysdoskey.bat
+CALL %DOTFILES%\git\gitaliases.bat
+CALL %DOTFILES%\subl\sublaliases.bat
+CALL %DOTFILES%\system\sysaliases.bat
+CALL %DOTFILES%\system\env.bat
+CALL %DOTFILES%\doskey\doskeyaliases.bat

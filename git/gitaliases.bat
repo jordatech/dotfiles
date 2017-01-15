@@ -10,17 +10,17 @@
 
 DOSKEY gs=git status --short
 
-:: DOSKEY gco=git checkout * :: does not function with added commands
+DOSKEY gco=git checkout $*
 
-:: DOSKEY gc=git commit * :: does not function with added commands
+DOSKEY gc=git commit $*
 
-:: DOSKEY gd=git diff *$ :: does not function with added commands
+DOSKEY gd=git diff $*
 
-:: DOSKEY gb=git branch * :: does not function with added commands
+DOSKEY gb=git branch $*
 
-DOSKEY ga=git add -A
+DOSKEY ga=git add $*
 
-DOSKEY gr=git reset
+DOSKEY gr=git reset $*
 
 :: DOSKEY gac=git add -A && git commit -m *
 
