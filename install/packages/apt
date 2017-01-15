@@ -6,6 +6,7 @@ git
 vim
 subl
 tree
+compizconfig-settings-manager
 
 # HIPE Specific
 #libboost-all-dev
