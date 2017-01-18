@@ -1,0 +1,9 @@
+//Author:      Jordan Ulmer
+//Date Created: 2017-01-04
+//Purpose:      User sublime-text-3 Macros
+//Reference: http://sublimetext.info/docs/en/extensibility/macros.html
+
+[
+    {"command": "move_to", "args": {"to": "hardeol"}},
+    {"command": "insert", "args": {"characters": "\n"}}
+]
