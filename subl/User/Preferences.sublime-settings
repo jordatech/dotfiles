@@ -13,5 +13,5 @@
 	"detect_indentation": true,
 	"auto_indent": true,
 	"smart_indent": true,
-	"indent_to_bracket": true
+	"indent_to_bracket": false
 }
