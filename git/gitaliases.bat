@@ -26,7 +26,9 @@ DOSKEY gun=git config --local user.name $*
 
 DOSKEY gue=git config --local user.email $*
 
-:: DOSKEY gac=git add -A && git commit -m *
+:: DOSKEY gac=git add -A && git commit -m $*
+
+:: DOSKEY gap=git fetch --prune
 
 DOSKEY glog=git log --graph --abbrev-commit --date=relative
 
