@@ -32,3 +32,6 @@ DOSKEY ....=cd../../../
 DOSKEY .4=cd../../../../
 DOSKEY .....=cd../../../../
 DOSKEY .5=cd../../../../..
+
+:: Run process in background (equivelent to "$vsim &" in linux)
+DOSKEY bk=START /B $*
