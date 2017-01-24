@@ -23,3 +23,4 @@ CALL %DOTFILES%\subl\sublaliases.bat
 CALL %DOTFILES%\system\sysaliases.bat
 CALL %DOTFILES%\system\env.bat
 CALL %DOTFILES%\doskey\doskeyaliases.bat
+CALL %DOTFILES%\quartus\quartusaliases.bat
