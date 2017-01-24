@@ -14,4 +14,7 @@
 	// Use standard internet browser forward page back page
 	{ "keys": ["alt+left"], "command": "next_view_in_stack" },
 	{ "keys": ["alt+right"], "command": "prev_view_in_stack" },
+
+    // Quick Switch Project
+    { "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
 ]
