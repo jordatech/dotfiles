@@ -19,5 +19,5 @@
     { "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
 
     // UVM System Verilog Comment // https://verificationacademy.com/verification-methodology-reference/uvm/docs_1.2/html/files/macros/uvm_message_defines-svh.html#`uvm_info
-    {"keys": ["ctrl+shift+c"], "command": "insert_snippet", "args": {"contents": "`uvm_info('INFO:',\\$sformatf('%d=functionn(%d)', return_value, arg_value),UVM_MEDIUM);"}},
+    {"keys": ["ctrl+shift+c"], "command": "insert_snippet", "args": {"contents": "`uvm_info('INFO:',\\$sformat('%d=function(%d)', return_value, arg_value),UVM_MEDIUM);"}},
 ]
