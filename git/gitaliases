@@ -23,6 +23,8 @@ alias gun='git config --local user.name'
 
 alias gue='git config --local user.email'
 
+# alias gfb='git filter-branch --tree-filter 'rm -rf ./projects/a1_uint_multiplier/folder_with_binaries/' --prune-empty HEAD --all'
+
 # alias gac='git add -A && git commit -m'
 
 alias gfp='git fetch --prune'

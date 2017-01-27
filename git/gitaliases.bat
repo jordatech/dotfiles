@@ -26,6 +26,8 @@ DOSKEY gun=git config --local user.name $*
 
 DOSKEY gue=git config --local user.email $*
 
+:: DOSKEY gfb='git filter-branch --tree-filter 'rm -rf ./projects/a1_uint_multiplier/folder_with_binaries/' --prune-empty HEAD --all'
+
 :: DOSKEY gac=git add -A && git commit -m $*
 
 DOSKEY gfp=git fetch --prune
