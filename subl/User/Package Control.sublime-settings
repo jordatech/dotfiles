@@ -10,6 +10,8 @@
 	"installed_packages":
 	[
 		"Compare Side-By-Side",
+		"Logos Syntax Highlighting",
+		"LogView",
 		"Package Control",
 		"SystemVerilog",
 		"Verilog"
