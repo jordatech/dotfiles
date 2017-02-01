@@ -3,15 +3,16 @@
 #Date:      2017-01-04
 #Purpose:   setup Hardware Integrated Prototyping Environment
 
-echo "Loading $DOTFILES/profile.hipe"
+echo "Loading $DOTFILES/config/profile.hipe"
 
 #Clone workspace if does not already exist.
 if [[ ! -e $WORKSPACE/jdulmer/hipe ]]; then
     git clone https://jordatech@bitbucket.org/HIPE-Team/hipe.git $WORKSPACE/jdulmer/hipe
 fi
 
-export HIPE_REPO=$WORKSPACE/$user/hipe
+export HIPE_REPO=$WORKSPACE/jdulmer/hipe
 
 if [[ -f $HIPE_REPO/config/profile.hipe ]]; then
+echo "Loading $HIPE_REPO/config/profile.hipe"
     source $HIPE_REPO/config/profile.hipe
 fi
