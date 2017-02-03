@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #Author: 	Jordan Ulmer
-#Date:		2016-12-31
+#Date:		2017-02-03
 #Purpose: 	git aliases
 
 
@@ -18,6 +18,9 @@ alias gb='git branch'
 alias ga='git add'
 
 alias gr='git reset'
+
+# grs=Interactively remove files just added and committed
+alias grs='git reset --soft HEAD~1'
 
 alias gun='git config --local user.name'
 
