@@ -3,7 +3,7 @@
 //Purpose:  User sublime-text-3 Preferences
 
 {
-	"font_size": 10,
+	"font_size": 11,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -13,5 +13,8 @@
 	"detect_indentation": true,
 	"auto_indent": true,
 	"smart_indent": true,
-	"indent_to_bracket": false
+	"indent_to_bracket": false,
+	"spell_check": true,
+	"dictionary": "Packages/Language - English/en_US.dic",
+
 }

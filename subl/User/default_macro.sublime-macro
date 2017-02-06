@@ -5,5 +5,5 @@
 
 [
     {"command": "move_to", "args": {"to": "hardeol"}},
-    {"command": "insert", "args": {"characters": "\n"}}
+    {"command": "insert", "args": {"characters": "\n"}},
 ]

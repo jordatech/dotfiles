@@ -20,4 +20,8 @@
 
     // UVM System Verilog Comment // https://verificationacademy.com/verification-methodology-reference/uvm/docs_1.2/html/files/macros/uvm_message_defines-svh.html#`uvm_info
     {"keys": ["ctrl+shift+c"], "command": "insert_snippet", "args": {"contents": "`uvm_info($sformatf('HIPE@[%5t]',\\$time),\\$sformatf('%d=functionn(%d)', return_value, arg_value),UVM_MEDIUM);"}},
+
+    // Use modified microsoft word spell check
+    { "keys": ["ctrl+f7"], "command": "next_misspelling" },
+    { "keys": ["ctrl+shift+f7"], "command": "prev_misspelling" },
 ]
