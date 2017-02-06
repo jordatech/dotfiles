@@ -1,0 +1,12 @@
+#//Author:   Jordan Ulmer
+#//Date Created: 2017-01-25
+#//Purpose:  UVM Verbosity Functions
+#// http://sublimetext.info/docs/en/extensibility/snippets.html
+#// TODO: IMPLEMENT SNIPIT FOR UVM Verbosity Functions - because keybinding cannot contain quotes "", but UVM requires quotes
+#// UVM System Verilog Comment // https://verificationacademy.com/verification-methodology-reference/uvm/docs_1.2/html/files/macros/uvm_message_defines-svh.html#`uvm_info
+#   {"keys": ["ctrl+shift+c"], "command": "insert_snippet", "args": {"contents": "`uvm_info($sformatf('HIPE@[%5t]',\\$time),\\$sformatf('%d=functionn(%d)', return_value, arg_value),UVM_MEDIUM);"}},
+
+<snippet>
+    <content><![CDATA[import ipdb; pdb.set_trace()]]></content>
+    <tabTrigger>p</tabTrigger>
+</snippet>
