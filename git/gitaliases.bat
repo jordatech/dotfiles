@@ -22,6 +22,8 @@ DOSKEY ga=git add $*
 
 DOSKEY gr=git reset $*
 
+DOSKEY gr=git reset --soft HEAD~1' $*
+
 DOSKEY gun=git config --local user.name $*
 
 DOSKEY gue=git config --local user.email $*
