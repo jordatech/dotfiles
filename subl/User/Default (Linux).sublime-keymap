@@ -1,5 +1,5 @@
 //Author:   Jordan Ulmer
-//Date Created: 2017-01-25
+//Date Created: 2017-02-16
 //Purpose:  User sublime-text-3 Keymaps
 
 [
@@ -27,4 +27,7 @@
 
     // Save all open files
     { "keys": ["ctrl+alt+shift+s"], "command": "save_all" }, 
+
+    // Close all open tabs
+    { "keys": ["ctrl+shift+w"], "command": "close_all" },
 ]
