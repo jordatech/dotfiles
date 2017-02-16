@@ -22,7 +22,12 @@ DOSKEY ga=git add $*
 
 DOSKEY gr=git reset $*
 
-DOSKEY gr=git reset --soft HEAD~1' $*
+
+:: grs=Interactively remove files just added and committed
+DOSKEY grs=git reset --soft HEAD~1
+
+DOSKEY grh=git reset --hard
+:: DOSKEY grh=git reset --hard origin/master
 
 DOSKEY gun=git config --local user.name $*
 
