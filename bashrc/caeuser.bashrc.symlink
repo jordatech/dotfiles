@@ -35,10 +35,10 @@ fi
 if [[ -f $DOTFILES/system/sysaliases ]]; then
     source $DOTFILES/system/sysaliases
 fi
-### modelsim
-if [ -f $DOTFILES/modelsim/prefered_text_editor.tcl ]; then
-    source $DOTFILES/modelsim/prefered_text_editor.tcl
-fi
+### modelsim # TODO: Debug and Source prefered_text_editor.tcl
+# if [ -f $DOTFILES/modelsim/prefered_text_editor.tcl ]; then
+#     source $DOTFILES/modelsim/prefered_text_editor.tcl
+# fi
 
 ### easy search with grep
 if [[ -f $DOTFILES/system/searchaliases ]]; then

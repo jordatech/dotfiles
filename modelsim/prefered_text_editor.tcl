@@ -15,6 +15,7 @@
 
 # Linux
 proc external_editor_linux {filename linenumber} {
- exec "/usr/bin/subl" $filename:$linenumber &
+    exec /usr/bin/subl $filename:$linenumber &
 }
 set PrefSource(altEditor) external_editor_linux
+# vsim -c -do "set PrefSource(altEditor) external_editor_linux"
