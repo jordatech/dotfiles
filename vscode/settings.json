@@ -26,6 +26,15 @@
   "[php]": {
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
   },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true,
+      "source.fixAll": true
+    },
+    
+  },
   "[blade]": {
     "editor.defaultFormatter": "shufo.vscode-blade-formatter",
     "editor.formatOnSave": false,
