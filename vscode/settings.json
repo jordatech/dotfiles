@@ -5,6 +5,7 @@
 
 {
   "workbench.colorTheme": "Monokai",
+  "git.defaultCloneDirectory": "C:\\DATA\\Workspace\\jordatech",
   "editor.autoIndent": true,
   "editor.detectIndentation": true,
   "editor.fontSize": 13,
