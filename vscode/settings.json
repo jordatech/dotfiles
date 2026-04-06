@@ -1,0 +1,21 @@
+//Author:   Jordan Ulmer
+//Date Created: 2026-04-06
+//Purpose:  User vscode Preferences
+{
+    "workbench.colorTheme": "Monokai",
+    "editor.autoIndent": true,
+    "editor.detectIndentation": true,
+    "editor.fontSize": 13,
+    "editor.tabSize": 4,
+    "editor.formatOnPaste": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "window.zoomLevel": 1,
+    "workbench.tree.indent": 20,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.size": "fill",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "editor.cursorStyle": "block-outline",
+    "editor.cursorBlinking": "smooth",
+}
