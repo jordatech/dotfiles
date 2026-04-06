@@ -19,7 +19,7 @@
     { "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
 
     // UVM System Verilog Comment // https://verificationacademy.com/verification-methodology-reference/uvm/docs_1.2/html/files/macros/uvm_message_defines-svh.html#`uvm_info
-    {"keys": ["ctrl+shift+c"], "command": "insert_snippet", "args": {"contents": "`uvm_info($sformatf('HIPE@[%5t]',\\$time),\\$sformatf('%d=functionn(%d)', return_value, arg_value),UVM_MEDIUM);"}},
+    { "keys": ["ctrl+shift+c"], "command": "insert_snippet", "args": {"contents": "`uvm_info($sformatf('HIPE@[%5t]',\\$time),\\$sformatf('%d=functionn(%d)', return_value, arg_value),UVM_MEDIUM);"}},
 
     // Use modified microsoft word spell check
     { "keys": ["ctrl+f7"], "command": "next_misspelling" },
@@ -29,18 +29,21 @@
     { "keys": ["ctrl+alt+shift+s"], "command": "save_all" }, 
 
     // Close all open tabs
-    { "keys": ["ctrl+shift+w"], "command": "close_all" },
+    { "keys": ["ctrl+shift+w"], "command": "workbench.action.closeAllEditors" },
 
     // Get rid of duplicates
     { "keys": ["f8"], "command": "permute_lines", "args": {"operation": "unique"} },
+
+    // Sort lines alphabetically
+    { "keys": ["f9"], "command": "editor.action.sortLinesAscending"},
 
     // Move line up and down
     { "keys": ["alt+up"], "command": "move_line_up" },
     { "keys": ["alt+down"], "command": "move_line_down" },
 
     // Goto previous and next view in stack (like forward and back in a web browser)
-    { "keys": ["alt+left"], "command": "workbench.action.previousEditor" },
-    { "keys": ["alt+right"], "command": "workbench.action.nextEditor" },
+    // { "keys": ["alt+left"], "command": "workbench.action.previousEditor" },
+    // { "keys": ["alt+right"], "command": "workbench.action.nextEditor" },
 
      // Duplicate line up and down
     { "keys": ["ctrl+shift+alt+up"], "command": "copy_line_up" },
