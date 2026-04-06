@@ -38,6 +38,10 @@
     { "keys": ["alt+up"], "command": "move_line_up" },
     { "keys": ["alt+down"], "command": "move_line_down" },
 
+    // Goto previous and next view in stack (like forward and back in a web browser)
+    { "keys": ["alt+left"], "command": "workbench.action.previousEditor" },
+    { "keys": ["alt+right"], "command": "workbench.action.nextEditor" },
+
      // Duplicate line up and down
     { "keys": ["ctrl+shift+alt+up"], "command": "copy_line_up" },
     { "keys": ["ctrl+shift+alt+down"], "command": "copy_line_down" },
@@ -47,12 +51,6 @@
     { "keys": ["ctrl+shift+down"], "command": "expand_line_selection_down" },
     
     // Cycle through open tabs
-    {
-        "key": "ctrl+tab",
-        "command": "workbench.action.nextEditor"
-    },
-    {
-        "key": "ctrl+shift+tab",
-        "command": "workbench.action.previousEditor"
-    }
+    { "key": "ctrl+tab", "command": "workbench.action.nextEditor"},
+    { "key": "ctrl+shift+tab", "command": "workbench.action.previousEditor"}
 ]
